@@ -1,0 +1,31 @@
+
+/* A l’aide des sélecteurs:
+Mettez le titre en rouge avec la propriété « color: red; »
+
+Mettez le lien en jaune avec la propriété « color: yellowgreen; »
+
+Mettez le fond de la première <div> en gris « background-color: lightgray; »
+
+Alignez tout le contenu de la seconde <div> sur la droite « text-align: right; »
+Changer la taille du texte du paragraphe de la seconde <div> avec la propriété « font-size: 2em; »
+
+ */
+h1{
+    color:red;
+}
+a{
+    color: yellowgreen
+}
+#contenu{
+    background-color: lightgray;
+}
+#contenu2{
+    text-align: right;
+    font-size:2em;
+}
+.logo-adrar{
+    width: 10%;
+    height: auto;
+    display: flex;
+    align-content: center;
+}

@@ -1,0 +1,11 @@
+header{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color:rgb(216, 16, 16, 90%);
+    transition: color 1s linear;
+}
+
+header:hover{
+    color:greenyellow;
+    
+}

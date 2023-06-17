@@ -1,0 +1,80 @@
+/* Anims2>> Creation des ressources css pour un cadre */
+.cadre1{
+    background-color: green;
+    width: 20em;
+    height: 20em;
+    border: solid greenyellow;
+    border-radius: 50%;
+    margin: 10em;
+
+
+
+
+    /* Anims3>> Ajout des propriétés de transition */
+    transition-property: background-color;
+    /* transition-property: width; */
+    transition-property: background-color, height, width, opacity;
+    transition-duration: 3s;
+
+    /* Anims3N>> une seule propriété transition-property ; 
+    toutes les propriétés enfant peuvent être ajoutées en liste par virgule */
+    /* Anims3<< */
+
+    /* Anims4>> Nous pouvons aussi ajouter une propriété supplémentaire
+     à nos transitions, la propriété « transition-delay » 
+     qui comme son nom l’indique,
+      permet de jouer une animation mais 
+      avec un délais au démarrage:
+*/
+    transition-delay: 0s;
+    /* Anims4<< */
+
+    /* ANIMS5>> Ajoutons encore plus à notre transition, avec la propriété « transition-timing-function » qui permet de choisir l’effet qu’aura la transition:
+ease: Rapide au début et lent à la fin
+linear: Vitesse régulière
+ease-in: Lent au début et de plus en plus rapide
+ease-out: Rapide au début, et de plus en plus lent
+ease-in-out: Lent au départ et à la fin, rapide entre
+ */
+    /* transition-timing-function: ease; */
+    transition-timing-function:  cubic-bezier(.9,.34,.6,10);
+ /* Q?>> Mais comment utiliser un cubic-beziers?  
+ Ah oui ok, ça fait varier les transitions d'une manière wawawawawawawa
+ Lien vers le site: https://cubic-bezier.com/
+*/
+    /* ANIMS5<< */
+
+}
+
+.cadre1:hover {
+    background-color: red;
+    opacity: 50%;
+    width: 22em;
+    height: 22em;
+}
+
+/* ANIMS6>> Nous pouvons aussi utiliser la super-propriété 
+« transition » qui permet, du coup, de réunir 
+toutes les propriétés précédentes en une seule:
+
+ */
+.cadre2{
+    background-color: green;
+    width: 20em;
+    height: 20em;
+    border: solid greenyellow;
+    border-radius: 50%;
+    margin: 10em;
+
+    transition: background-color 2s, opacity , height 1s, width 1s linear ;
+
+
+}
+/* ANIMS6<< */
+
+.cadre2:hover {
+    background-color: red;
+    opacity: 50%;
+    width: 22em;
+    height: 22em;
+}

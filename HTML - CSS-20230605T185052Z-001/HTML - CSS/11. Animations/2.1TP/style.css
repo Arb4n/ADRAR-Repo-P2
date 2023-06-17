@@ -1,0 +1,34 @@
+header {background-color: antiquewhite;
+
+background-color:antiquewhite;
+/* align-content: center; */
+
+padding: 1em;
+}
+#hautDePage, #basDePage{
+    display: flex;
+    justify-content: end;
+    background-color: aliceblue;
+    padding: 1em;
+    font-size: 0.65em;
+}
+.navbar li{ display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+.navbar-misc {
+    display: flex;
+    justify-content: start;
+    /* align-content: row; */
+    background-color: aliceblue;
+    margin: 1em;
+    margin-left: -1em;
+    
+}
